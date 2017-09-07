@@ -5,6 +5,7 @@
 		<p>Have you experience real time Vue?</p>
 		<input v-model="wtf" type="text">
 		<p>Mindblown goes to... {{ wtf }}</p>
+		<input type="button" v-on:click="capitalizeWtf" value="Capitalize">
 	</div>
 
 	<script src="https://unpkg.com/vue"></script>
@@ -13,6 +14,11 @@
 			el: "#app",
 			data: {
 				wtf: ''
+			},
+			methods: {
+				capitalizeWtf: function () {
+					this.wtf = this.wtf.toUpperCase();
+				}
 			}
 		});
 	</script>
