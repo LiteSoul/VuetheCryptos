@@ -1,0 +1,21 @@
+<html>
+
+<body>
+	<div id="app">
+		<p>Have you experience real time Vue?</p>
+		<input v-model="wtf" type="text">
+		<p>Mindblown goes to... {{ wtf }}</p>
+	</div>
+
+	<script src="https://unpkg.com/vue"></script>
+	<script>
+		let app = new Vue({
+			el: "#app",
+			data: {
+				wtf: ''
+			}
+		});
+	</script>
+</body>
+
+</html>
