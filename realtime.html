@@ -6,6 +6,11 @@
 		<input v-model="wtf" type="text">
 		<p>Mindblown goes to... {{ wtf }}</p>
 		<input type="button" v-on:click="capitalizeWtf" value="Capitalize">
+		<br>
+		<p>Now only the first letter:</p>
+		<input v-model="wtf2" type="text">
+		<p>Mindblown goes to... {{ wtf2 }}</p>
+		<input type="button" v-on:click='capFirstWtf' value='Capitalize first letter only'>
 	</div>
 
 	<script src="https://unpkg.com/vue"></script>
@@ -13,15 +18,20 @@
 		let app = new Vue({
 			el: "#app",
 			data: {
-				wtf: ''
+				wtf: '',
+				wtf2: ''
 			},
 			methods: {
 				capitalizeWtf: function () {
-					this.wtf = this.wtf.toUpperCase();
+					this.wtf = this.wtf.toUpperCase()
+				},
+				capFirstWtf: function () {
+					this.wtf2 = this.wtf2 && this.wtf2[0].toUpperCase() + this.wtf2.slice(1)
 				}
 			}
 		});
 	</script>
+	<script src="test.js"></script>
 </body>
 
 </html>
