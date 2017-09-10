@@ -44,7 +44,7 @@
 					<td>{{ coin.rank }}</td>
 					<td><img v-bind:src="getCoinImage(coin.id)"> {{ coin.name }}</td>
 					<td>{{ coin.symbol }}</td>
-					<td>{{ coin.price_usd | currency }}</td>
+					<td>${{ coin.price_usd }}</td>
 					<td v-bind:style="getColor(coin.percent_change_1h)">
 						<span v-if="coin.percent_change_1h > 0">+</span>{{ coin.percent_change_1h }}%
 					</td>
@@ -54,7 +54,8 @@
 					<td v-bind:style="getColor(coin.percent_change_7d)">
 						<span v-if="coin.percent_change_7d > 0">+</span>{{ coin.percent_change_7d }}%
 					</td>
-					<td>{{ coin.market_cap_usd | currency }}</td>
+					<!-- <td>{{ coin.market_cap_usd | currency('$', 0) }}</td> -->
+					<td>${{ marketCap(coin.market_cap_usd) }}</td>
 				</tr>
 			</tbody>
 		</table>
@@ -67,7 +68,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
 	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="./static/js/app.js"></script>
 </body>

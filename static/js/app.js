@@ -1,10 +1,4 @@
-/**
- * Our Vue.js application.
- *
- * This manages the entire front-end website.
- */
-
-// The coinmarketcap API
+// coinmarketcap API
 let coinMarketCap = 'https://api.coinmarketcap.com/v1/ticker/?limit=10'
 
 let app = new Vue({
@@ -19,8 +13,6 @@ let app = new Vue({
      * minutes by the backing API service.
      */
 		getCoins: function() {
-			let self = this
-
 			axios
 				.get(coinMarketCap)
 				.then(resp => {
@@ -48,6 +40,10 @@ let app = new Vue({
      */
 		getColor: num => {
 			return num > 0 ? 'color:green;' : 'color:red;'
+		},
+
+		marketCap: n => {
+			return n.replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, '$1,')
 		}
 	},
 	/**
