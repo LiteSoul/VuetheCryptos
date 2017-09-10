@@ -16,20 +16,20 @@
 	<script src="https://unpkg.com/vue"></script>
 	<script>
 		let app = new Vue({
-			el: "#app",
+			el: '#app',
 			data: {
 				wtf: '',
 				wtf2: ''
 			},
 			methods: {
 				capitalizeWtf: function () {
-					this.wtf = this.wtf.toUpperCase();
+					this.wtf = this.wtf.toUpperCase()
 				},
 				capFirstWtf: function () {
 					this.wtf2 = this.wtf2 && this.wtf2[0].toUpperCase() + this.wtf2.slice(1)
 				}
 			}
-		});
+		})
 	</script>
 	<script src="test.js"></script>
 </body>
