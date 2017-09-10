@@ -1,2 +1,2 @@
-# CryptoCompare
-Cryptocurrency comparison site built with Vue.js
+# Vue the Crypto
+Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketcap API.
