@@ -7,7 +7,7 @@ let app = new Vue({
 		coins: []
 	},
 	methods: {
-		//Get the 10 cryptocurrencies from API
+		//Get the top 10 cryptocurrencies from API
 		getCoins: function() {
 			axios
 				.get(coinMarketCap)
