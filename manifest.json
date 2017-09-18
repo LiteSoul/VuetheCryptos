@@ -1,0 +1,15 @@
+{
+	"short_name": "Vue Cryptos",
+	"name": "Vue the Cryptos",
+	"icons": [
+		{
+			"src": "icon192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		}
+	],
+	"start_url": "",
+	"background_color": "#232e33",
+	"Theme_color": "#232e33",
+	"display": ""
+}
