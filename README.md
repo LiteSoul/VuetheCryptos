@@ -11,7 +11,7 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
 -Preload styles/scripts to start loading them without blocking the page rendering:
 [https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/]()
 
--Cache some resources for up to a year (it's done automatically but Vue, Axios and Netlify(Cloudfare) CDN's
+-Cache some resources for up to a year (it's done automatically by Vue, Axios and Netlify(Cloudfare) CDN's)
 
 -Auto deploy to Netlify from GitHub, as a "static site" for serverless fast loading
 
