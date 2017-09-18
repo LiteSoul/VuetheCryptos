@@ -8,8 +8,8 @@
 			"type": "image/png"
 		}
 	],
-	"start_url": "",
+	"start_url": "/?utm_source=homescreen",
 	"background_color": "#232e33",
 	"Theme_color": "#232e33",
-	"display": ""
+	"display": "minimal-ui"
 }
