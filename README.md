@@ -18,8 +18,8 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
 -Make it a Progressive Web App, with Service worker and offline caching 
 
 
-**To-do:**
-1. Add graphics
+**Graphics To-do:**
+1. Add more graphics
 2. Make graphics local
 3. Add crypto anime characters
 4. Convert images to webp
