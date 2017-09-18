@@ -35,7 +35,7 @@
 			<tbody>
 				<tr v-for="coin in coins">
 					<td data-label='Rank'>{{ coin.rank }}</td>
-					<td data-label='Name'><img v-bind:src="getCoinImage(coin.id)" v-bind:alt="{{ coin.name }}"> {{ coin.name }}</td>
+					<td data-label='Name'><img v-bind:src="getCoinImage(coin.id)" v-bind:alt="coin.name"> {{ coin.name }}</td>
 					<td data-label='Symbol'>{{ coin.symbol }}</td>
 					<td data-label='Price (USD)'>${{ coin.price_usd }}</td>
 					<td data-label='1 Hour' v-bind:style="getColor(coin.percent_change_1h)">
