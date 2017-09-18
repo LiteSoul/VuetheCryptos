@@ -15,7 +15,7 @@
 	],
 	"start_url": "/?utm_source=homescreen",
 	"background_color": "#232e33",
-	"Theme_color": "#232e33",
+	"theme_color": "#232e33",
 	"display": "minimal-ui",
 	"orientation": "portrait"
 }
