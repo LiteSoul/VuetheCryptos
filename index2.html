@@ -9,7 +9,7 @@
 	<link rel="icon" sizes="192x192" href="icon192x192.png">
 	<link rel="manifest" href="manifest.json">
 	<title>Vue the Cryptos</title>
-	<link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css">
+	<link rel="stylesheet" href="mini-default.min.css">
 	<!-- <link rel="stylesheet" href="https://gitcdn.link/cdn/Chalarangelo/mini.css/930b613d293f5cf02fe3f31efcadc7499b4f396f/dist/mini-pwa.min.css"> -->
 	<!-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://gitcdn.link/cdn/Chalarangelo/mini.css/930b613d293f5cf02fe3f31efcadc7499b4f396f/dist/mini-dark.min.css"> -->
 	<!-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://gitcdn.link/cdn/Chalarangelo/mini.css/930b613d293f5cf02fe3f31efcadc7499b4f396f/dist/mini-pwa.min.css"> -->
@@ -54,17 +54,8 @@
 			</tbody>
 		</table> -->
 
-		<!-- <div v-for="coin in coins" class="tabs stacked">
-			<input type="checkbox" v-bind:id="coin.name" aria-hidden="true">
-			<label v-bind:for="coin.name" aria-hidden="true">{{ coin.name }}</label>
-			<div>
-				<p>{{ coin.symbol }}</p>
-				<p>${{ coin.price_usd }}</p>
-				<p>{{ coin.percent_change_7d }}%</p>
-			</div>
-		</div> -->
 
-		<div v-for="coin in coins" class="tabs stacked">
+		<!-- <div v-for="coin in coins" class="tabs stacked">
 			<input type="checkbox" v-bind:id="coin.name+'2'" aria-hidden="true">
 			<label v-bind:for="coin.name+'2'" aria-hidden="true">
 				<div class="container">
@@ -105,8 +96,67 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
+
+		<div v-for="coin in coins" class="tabs stacked">
+			<input v-bind:id="coin.name+'2'" type="radio" name="accordion" aria-hidden="true">
+			<label v-bind:for="coin.name+'2'" aria-hidden="true">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2">
+							<p style="text-align:left">#{{ coin.rank }}</p>
+						</div>
+						<div class="col-sm-7">
+							<p>
+								<img v-bind:src="getCoinImage(coin.id)" v-bind:alt="coin.name">
+								{{ coin.name }} 
+								({{ coin.symbol }}) 
+							</p>
+						</div>
+						<div class="col-sm-3">
+							<p style="text-align:right">${{ coin.price_usd }}</p>
+						</div>
+					</div>
+				</div>
+			</label>
+			<div class="container">
+				<div class="row">
+					<table>
+						<thead>
+							<tr>
+								<!-- <th>Rank</th>
+								<th>Name</th>
+								<th>Symbol</th>
+								<th>Price (USD)</th> -->
+								<th>Change 1h</th>
+								<th>Change 24h</th>
+								<th>Change 7d</th>
+								<th>Market Cap (USD)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<!-- <td data-label='Rank'>{{ coin.rank }}</td>
+								<td data-label='Name'><img v-bind:src="getCoinImage(coin.id)" v-bind:alt="coin.name"> {{ coin.name }}</td>
+								<td data-label='Symbol'>{{ coin.symbol }}</td>
+								<td data-label='Price (USD)'>${{ coin.price_usd }}</td> -->
+								<td data-label='Change 1h' v-bind:style="getColor(coin.percent_change_1h)">
+									<span v-if="coin.percent_change_1h > 0">+</span>{{ coin.percent_change_1h }}%
+								</td>
+								<td data-label='Change 24h' v-bind:style="getColor(coin.percent_change_24h)">
+									<span v-if="coin.percent_change_24h > 0">+</span>{{ coin.percent_change_24h }}%
+								</td>
+								<td data-label='Change 7d' v-bind:style="getColor(coin.percent_change_7d)">
+									<span v-if="coin.percent_change_7d > 0">+</span>{{ coin.percent_change_7d }}%
+								</td>
+								<td data-label='Market Cap (USD)'>${{ currencyConv(coin.market_cap_usd) }}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
 
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
