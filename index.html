@@ -18,7 +18,7 @@
 	<h2 style="text-align:center"><img src="favicon-32x32.png" alt="">ue the Cryptos</h2>
 	<p style="text-align:center"><i>Real-time data on the Top 10 cryptocurrencies by marketcap</i></p>
 
-	<div id="app" style="width:720px;margin: auto">
+	<div id="app" style="max-width:720px;margin: auto">
 
 		<div v-for="coin in coins" class="tabs stacked">
 			<input v-bind:id="coin.name+'2'" type="radio" name="accordion" aria-hidden="true">
