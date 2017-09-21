@@ -18,12 +18,11 @@ let app = new Vue({
 					return err
 				})
 		},
-		//Get png image of coind from it's ID
-		getCoinImage: function(id) {
-			return (
-				'https://files.coinmarketcap.com/static/img/coins/16x16/' + id + '.png'
-			)
-		},
+		//Get png image of coin from it's ID
+		getCoinImage: id =>
+			`https://files.coinmarketcap.com/static/img/coins/16x16/${id}.png`,
+		//Get coinmarketcap coin link from it's ID
+		getCoinLink: id => `https://coinmarketcap.com/currencies/${id}/`,
 		//Makes numbers green or red depending on if it's positive or negative
 		getColor: num => {
 			return num > 0 ? 'color:green;' : 'color:red;'
