@@ -2,11 +2,15 @@ const filesToCache = [
 	'/',
 	'/index.html',
 	'/manifest.json',
-	'/mini-pwa.min.css',
+	'/mini-dark.min.css',
 	'https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js',
 	'https://unpkg.com/axios@0.16.2/dist/axios.min.js',
 	'/app.min.js',
-	'/call-sw.js'
+	'/call-sw.js',
+	'sw.js',
+	'favicon-32x32.png',
+	'android-icon-192x192.png',
+	'logo.png'
 ]
 
 self.addEventListener('install', function(event) {
