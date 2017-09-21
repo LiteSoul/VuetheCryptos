@@ -1,0 +1,250 @@
+body,
+table td {
+	background: #232e33;
+}
+.tabs,
+a {
+	opacity: 1;
+}
+html {
+	font-size: 16px;
+}
+*,
+html {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+}
+* {
+	font-size: 1rem;
+}
+body {
+	margin: 0;
+	color: #d0d0d0;
+}
+input {
+	overflow: visible;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+h2 {
+	line-height: 1.2em;
+	margin: 0.75rem 0.5rem;
+	font-weight: 500;
+	font-size: 1.6875rem;
+}
+p {
+	margin: 0.5rem;
+}
+a {
+	color: #039be5;
+	text-decoration: underline;
+}
+a:visited {
+	color: #0288d1;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 0.75rem;
+}
+.row {
+	box-sizing: border-box;
+	-webkit-box-flex: 0;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+[class^='col-sm-'] {
+	box-sizing: border-box;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	flex: 0 0 auto;
+	padding: 0 0.25rem;
+}
+.col-sm-2 {
+	max-width: 16.66667%;
+	-webkit-flex-basis: 16.66667%;
+	flex-basis: 16.66667%;
+}
+.col-sm-3 {
+	max-width: 25%;
+	-webkit-flex-basis: 25%;
+	flex-basis: 25%;
+}
+.col-sm-7 {
+	max-width: 58.33333%;
+	-webkit-flex-basis: 58.33333%;
+	flex-basis: 58.33333%;
+}
+label {
+	padding: 0.25rem 0.5rem;
+}
+::-webkit-input-placeholder {
+	opacity: 1;
+	color: #757575;
+}
+::-moz-placeholder {
+	opacity: 1;
+	color: #757575;
+}
+::-ms-placeholder {
+	opacity: 1;
+	color: #757575;
+}
+::placeholder {
+	opacity: 1;
+	color: #757575;
+}
+[type='radio'] {
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 0.0625rem solid #1c2529;
+	margin: 0 auto;
+}
+table tr {
+	padding: 0.5rem;
+}
+table td,
+table th {
+	padding: 0.625rem;
+	border-left: 0.0625rem solid #1c2529;
+	border-top: 0.0625rem solid #1c2529;
+}
+table thead th {
+	border-top: 0;
+}
+table th {
+	background: #20292e;
+}
+table td:first-child,
+table th:first-child {
+	border-left: 0;
+}
+@media screen and (max-width: 767px) {
+	table:not(.preset) {
+		border-collapse: collapse;
+		border: 0;
+		width: 100%;
+	}
+	table:not(.preset) th,
+	table:not(.preset) thead {
+		border: 0;
+		height: 1px;
+		width: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		clip: rect(0 0 0 0);
+		-webkit-clip-path: inset(100%);
+		clip-path: inset(100%);
+	}
+	table:not(.preset) tr {
+		display: block;
+		border: 0.0625rem solid #1c2529;
+		margin-bottom: 0.625rem;
+	}
+	table:not(.preset) td {
+		display: block;
+		border: 0;
+		border-bottom: 0.0625rem solid #1c2529;
+		text-align: right;
+	}
+	table:not(.preset) td:before {
+		content: attr(data-label);
+		float: left;
+		font-weight: 700;
+	}
+	table:not(.preset) td:last-child {
+		border-bottom: 0;
+	}
+}
+.tabs {
+	width: 100%;
+	-webkit-box-pack: justify;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.tabs > label {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	-webkit-order: 1;
+	order: 1;
+	display: inline-block;
+	height: 1.5rem;
+	background: #1d262a;
+	border: 0.0625rem solid #757575;
+	padding: 0.75rem;
+}
+.tabs > [type='radio'] {
+	display: none;
+	visibility: hidden;
+}
+.tabs > label + div {
+	-webkit-flex-basis: auto;
+	flex-basis: auto;
+	-webkit-order: 2;
+	order: 2;
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: top;
+	transform-origin: top;
+}
+.tabs.stacked {
+	-webkit-box-orient: vertical;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+.tabs.stacked > label {
+	-webkit-order: initial;
+	order: initial;
+}
+.tabs.stacked > label + div {
+	-webkit-order: initial;
+	order: initial;
+	-webkit-transform-origin: top;
+	transform-origin: top;
+}
+@media screen and (max-width: 767px) {
+	.tabs {
+		-webkit-box-orient: vertical;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.tabs > label,
+	.tabs > label + div {
+		-webkit-order: initial;
+		order: initial;
+	}
+}
