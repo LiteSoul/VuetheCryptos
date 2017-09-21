@@ -9,15 +9,16 @@
 	<link rel="icon" sizes="192x192" href="icon192x192.png">
 	<link rel="manifest" href="manifest.json">
 	<title>Vue the Cryptos</title>
-	<link rel="stylesheet" href="mini-default.min.css">
+	<!-- <link rel="stylesheet" href="mini-default.min.css"> -->
+	<link rel="stylesheet" href="https://gitcdn.link/cdn/Chalarangelo/mini.css/930b613d293f5cf02fe3f31efcadc7499b4f396f/dist/mini-dark.min.css">
 	<!-- <link rel="stylesheet" href="https://gitcdn.link/cdn/Chalarangelo/mini.css/930b613d293f5cf02fe3f31efcadc7499b4f396f/dist/mini-pwa.min.css"> -->
 	<!-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://gitcdn.link/cdn/Chalarangelo/mini.css/930b613d293f5cf02fe3f31efcadc7499b4f396f/dist/mini-dark.min.css"> -->
 	<!-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://gitcdn.link/cdn/Chalarangelo/mini.css/930b613d293f5cf02fe3f31efcadc7499b4f396f/dist/mini-pwa.min.css"> -->
 </head>
 
 <body>
-	<h3>Vue the Cryptos</h3>
-	<p>- Real-time data on the Top 10 cryptocurrencies by marketcap -</p>
+	<h2 style="text-align:center"><img src="favicon-32x32.png" alt="">ue the Cryptos</h2>
+	<p style="text-align:center"><i>Real-time data on the Top 10 cryptocurrencies by marketcap</i></p>
 
 	<div id="app">
 
@@ -66,7 +67,9 @@
 									<span v-if="coin.percent_change_7d > 0">+</span>{{ coin.percent_change_7d }}%
 								</td>
 								<td data-label='Market Cap (USD)'>${{ currencyConv(coin.market_cap_usd) }}</td>
-								<td data-label='More info'><a v-bind:href="getCoinLink(coin.id)">Full Stats</a></td>
+								<td data-label='More info'>
+									<a v-bind:href="getCoinLink(coin.id)">Full Stats</a>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -78,7 +81,8 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
 	<script src="https://unpkg.com/axios@0.16.2/dist/axios.min.js"></script>
-	<script src="app.min.js"></script>
+	<!-- <link rel="stylesheet" href="mini-default.min.css"> -->
+	<script src="app.js"></script>
 	<script src="call-sw.js"></script>
 </body>
 
