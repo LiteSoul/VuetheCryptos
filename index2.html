@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#232e33">
+	<link rel="icon" sizes="192x192" href="icon192x192.png">
+	<link rel="manifest" href="manifest.json">
+	<title>Vue the Cryptos</title>
+	<link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css">
+	<!-- <link rel="stylesheet" href="https://gitcdn.link/cdn/Chalarangelo/mini.css/930b613d293f5cf02fe3f31efcadc7499b4f396f/dist/mini-pwa.min.css"> -->
+	<!-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://gitcdn.link/cdn/Chalarangelo/mini.css/930b613d293f5cf02fe3f31efcadc7499b4f396f/dist/mini-dark.min.css"> -->
+	<!-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://gitcdn.link/cdn/Chalarangelo/mini.css/930b613d293f5cf02fe3f31efcadc7499b4f396f/dist/mini-pwa.min.css"> -->
+</head>
+
+<body>
+	<h3>Vue the Cryptos</h3>
+	<p>- Real-time data on the Top 10 cryptocurrencies by marketcap -</p>
+
+	<div id="app">
+		<!-- <table>
+			<caption>Vue the Cryptos</caption>
+			<thead>
+				<tr>
+					<th>Rank</th>
+					<th>Name</th>
+					<th>Symbol</th>
+					<th>Price (USD)</th>
+					<th>1 Hour</th>
+					<th>1 Day</th>
+					<th>1 Week</th>
+					<th>Market Cap (USD)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="coin in coins">
+					<td data-label='Rank'>{{ coin.rank }}</td>
+					<td data-label='Name'><img v-bind:src="getCoinImage(coin.id)" v-bind:alt="coin.name"> {{ coin.name }}</td>
+					<td data-label='Symbol'>{{ coin.symbol }}</td>
+					<td data-label='Price (USD)'>${{ coin.price_usd }}</td>
+					<td data-label='1 Hour' v-bind:style="getColor(coin.percent_change_1h)">
+						<span v-if="coin.percent_change_1h > 0">+</span>{{ coin.percent_change_1h }}%
+					</td>
+					<td data-label='1 Day' v-bind:style="getColor(coin.percent_change_24h)">
+						<span v-if="coin.percent_change_24h > 0">+</span>{{ coin.percent_change_24h }}%
+					</td>
+					<td data-label='1 Week' v-bind:style="getColor(coin.percent_change_7d)">
+						<span v-if="coin.percent_change_7d > 0">+</span>{{ coin.percent_change_7d }}%
+					</td>
+					<td data-label='Market Cap (USD)'>${{ currencyConv(coin.market_cap_usd) }}</td>
+				</tr>
+			</tbody>
+		</table> -->
+
+		<!-- <div v-for="coin in coins" class="tabs stacked">
+			<input type="checkbox" v-bind:id="coin.name" aria-hidden="true">
+			<label v-bind:for="coin.name" aria-hidden="true">{{ coin.name }}</label>
+			<div>
+				<p>{{ coin.symbol }}</p>
+				<p>${{ coin.price_usd }}</p>
+				<p>{{ coin.percent_change_7d }}%</p>
+			</div>
+		</div> -->
+
+		<div v-for="coin in coins" class="tabs stacked">
+			<input type="checkbox" v-bind:id="coin.name+'2'" aria-hidden="true">
+			<label v-bind:for="coin.name+'2'" aria-hidden="true">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1 col-md col-lg">
+						</div>
+						<div class="col-sm-2 col-md-2 col-lg-2">
+							<p style="text-align:left">#{{ coin.rank }}</p>
+						</div>
+						<div class="col-sm-4 col-md-3 col-lg-3">
+							<p>
+								<img v-bind:src="getCoinImage(coin.id)" v-bind:alt="coin.name">
+								{{ coin.name }} 
+								({{ coin.symbol }}) 
+							</p>
+						</div>
+						<div class="col-sm-2 col-md-2 col-lg-2">
+							<p style="text-align:right">${{ coin.price_usd }} USD</p>
+						</div>
+						<div class="col-sm-1">
+						</div>
+					</div>
+				</div>
+			</label>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<p>1 Week</p>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<p>{{ coin.percent_change_7d }}%</p>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<p>Market Cap (USD)</p>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<p>${{ currencyConv(coin.market_cap_usd) }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
+		<script src="https://unpkg.com/axios@0.16.2/dist/axios.min.js"></script>
+		<script src="app.min.js"></script>
+		<script src="call-sw.js"></script>
+</body>
+
+</html>
