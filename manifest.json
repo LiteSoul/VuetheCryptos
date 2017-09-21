@@ -3,19 +3,14 @@
 	"name": "Vue the Cryptos",
 	"icons": [
 		{
-			"src": "icon192x192.png",
+			"src": "android-icon-192x192.png",
 			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "icon512x512.png",
-			"sizes": "512x512",
 			"type": "image/png"
 		}
 	],
 	"start_url": "/?utm_source=homescreen",
-	"background_color": "#232e33",
-	"theme_color": "#232e33",
+	"background_color": "#092327",
+	"theme_color": "#092327",
 	"display": "minimal-ui",
 	"orientation": "portrait"
 }
