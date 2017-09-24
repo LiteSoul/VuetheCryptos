@@ -36,7 +36,7 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
   2. ~~Make graphics local~~ (done)
   3. Add crypto anime characters
   4. Convert images to webp
-  5. ~~Make the list [collapsable](http://minicss.org/tab#stacked-tabs)~~ (done)
+  5. ~~Make the list collapsable~~ (done)
 
 
 - Prompt the mobile user to add to homescreen
