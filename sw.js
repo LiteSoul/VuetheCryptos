@@ -9,9 +9,9 @@ const filesToCache = [
 	'/app.min.js',
 	'/call-sw.js',
 	'sw.js',
-	'favicon-32x32.png',
-	'android-icon-192x192.png',
-	'logo.png'
+	'/images/favicon-32x32.png',
+	'/images/android-icon-192x192.png',
+	'/images/logo.png'
 ]
 
 self.addEventListener('install', function(event) {
