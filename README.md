@@ -22,10 +22,10 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
 
 ***Outstanding performance results has been measured using Google's Lighthouse tool:***
 
-![lighthouse](https://raw.githubusercontent.com/LiteSoul/VuetheCryptos/master/images/lighthouse.png)
+![lighthouse](https://raw.githubusercontent.com/LiteSoul/VuetheCryptos/master/images/lighthouse.webp)
 
 ***and Pingdom tool:***
-![pinddom](https://raw.githubusercontent.com/LiteSoul/VuetheCryptos/master/images/pingdom.png)
+![pinddom](https://raw.githubusercontent.com/LiteSoul/VuetheCryptos/master/images/pingdom.webp)
 
 
 
