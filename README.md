@@ -20,7 +20,7 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
 
   ​
 
-***Results: Outstanding performance, as measured using Google's Lighthouse tool:***
+***<u>Results:</u> Outstanding performance, as measured by Google's Lighthouse tool:***
 
 ![lighthouse](https://raw.githubusercontent.com/LiteSoul/VuetheCryptos/master/images/lighthouse.webp)
 
@@ -35,7 +35,7 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
 
 **To-dos:**
 
-- Graphics:
+- Add Graphics:
   1. ~~Add some logo~~ (done)
   2. ~~Make graphics local~~ (done)
   3. Add crypto anime characters
@@ -43,4 +43,4 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
   5. ~~Make the list collapsable~~ (done)
 
 
-- Prompt the mobile user to add to homescreen
+- Prompt the mobile user to add to homescreen from mobile devices
