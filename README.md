@@ -12,7 +12,7 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
 
 - Preload styles/scripts to start loading them without blocking page rendering:
 
-- Cache some resources for up to a year, after securing by HTTPS and HTTP/2
+- Cache some resources for up to a year, after securing it with HTTPS and HTTP/2
 
 - Auto deploy to Netlify from GitHub, as a "static site" for serverless fast loading
 
@@ -20,16 +20,20 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
 
   ​
 
-***Outstanding performance results, measured using Google's Lighthouse tool:***
+***Results: Outstanding performance, as measured using Google's Lighthouse tool:***
 
 ![lighthouse](https://raw.githubusercontent.com/LiteSoul/VuetheCryptos/master/images/lighthouse.webp)
+
+
 
 ***and Pingdom tool:***
 ![pinddom](https://raw.githubusercontent.com/LiteSoul/VuetheCryptos/master/images/pingdom.webp)
 
 
 
-**To-do:**
+
+
+**To-dos:**
 
 - Graphics:
   1. ~~Add some logo~~ (done)
