@@ -1,6 +1,8 @@
 ## Vue the Cryptos
-[![GitHub issues](https://img.shields.io/github/issues/LiteSoul/VuetheCryptos.svg)](https://github.com/LiteSoul/VuetheCryptos/issues)[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/LiteSoul/VuetheCryptos/master/LICENSE)[![Twitter](https://img.shields.io/twitter/url/https/github.com/LiteSoul/VuetheCryptos.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketcap API.
+
+[![GitHub issues](https://img.shields.io/github/issues/LiteSoul/VuetheCryptos.svg)](https://github.com/LiteSoul/VuetheCryptos/issues)[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/LiteSoul/VuetheCryptos/master/LICENSE)[![Twitter](https://img.shields.io/twitter/url/https/github.com/LiteSoul/VuetheCryptos.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+
 
 
 
