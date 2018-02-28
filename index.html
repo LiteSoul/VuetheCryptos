@@ -354,7 +354,7 @@
 			height: auto
 		}
 
-		img {
+		.crypto-icons {
 			width: 16px;
 			height: 16px;
 		}
@@ -364,7 +364,7 @@
 
 <body style="background-color:#092327">
 	<h2 style="text-align:center">
-		<img src="images/favicon-32x32.png" alt="">ue the Cryptos</h2>
+		<img src="images/favicon-32x32.png" alt="Vue the Cryptos">ue the Cryptos</h2>
 	<p style="text-align:center">
 		<i>Real-time data on the Top 10 cryptocurrencies by marketcap</i>
 	</p>
@@ -381,7 +381,7 @@
 						</div>
 						<div class="col-sm-7">
 							<p>
-								<img v-bind:src="getCoinImage(coin.symbol.toLowerCase())" v-bind:alt="coin.symbol"> {{ coin.name }} ({{ coin.symbol }})
+								<img class='crypto-icons' v-bind:src="getCoinImage(coin.symbol.toLowerCase())" v-bind:alt="coin.symbol"> {{ coin.name }} ({{ coin.symbol }})
 							</p>
 						</div>
 						<div class="col-sm-3">
