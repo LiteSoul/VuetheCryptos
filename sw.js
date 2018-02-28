@@ -20,7 +20,7 @@ const filesToCache = [
 self.addEventListener('install', function(event) {
 	self.skipWaiting()
 	event.waitUntil(
-		caches.open('v1').then(function(cache) {
+		caches.open('v1.1').then(function(cache) {
 			return cache.addAll(filesToCache)
 		})
 	)
