@@ -46,4 +46,4 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
   5. ~~Make the list collapsable~~ (done)
 
 
-- Prompt the mobile user to add to homescreen from mobile devices
+- ~~Prompt the mobile user to add to homescreen from mobile devices~~ (done)
