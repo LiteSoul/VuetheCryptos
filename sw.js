@@ -6,6 +6,7 @@ const filesToCache = [
 	'https://d33wubrfki0l68.cloudfront.net/css/1465af533389dc07c62369d47fe3e9f717222608/mini-dark.min.css',
 	'https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js',
 	'https://unpkg.com/axios@0.16.2/dist/axios.min.js',
+	'https://d33wubrfki0l68.cloudfront.net/bundles/547a0db3110fb7612ba2235a97d51ad8f7885f29.js',
 	'/app.js',
 	'/app.min.js',
 	'/call-sw.js',
