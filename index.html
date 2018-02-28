@@ -376,7 +376,7 @@
 						</div>
 						<div class="col-sm-7">
 							<p>
-								<img v-bind:src="getCoinImage(coin.id)" v-bind:alt="coin.symbol"> {{ coin.name }} ({{ coin.symbol }})
+								<img v-bind:src="getCoinImage(coin.symbol.toLowerCase())" v-bind:alt="coin.symbol"> {{ coin.name }} ({{ coin.symbol }})
 							</p>
 						</div>
 						<div class="col-sm-3">

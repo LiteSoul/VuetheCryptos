@@ -20,7 +20,7 @@ let app = new Vue({
 		},
 		//Get png image of coin from it's ID
 		getCoinImage: id =>
-			`https://files.coinmarketcap.com/static/img/coins/16x16/${id}.png`,
+			`https://www.barchart.com/img/crypto-icons/${id}.png`,
 		//Get coinmarketcap coin link from it's ID
 		getCoinLink: id => `https://coinmarketcap.com/currencies/${id}/`,
 		//Makes numbers green or red depending on if it's positive or negative
