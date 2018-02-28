@@ -13,7 +13,7 @@ Fast cryptocurrencies live viewer, built with Vue.js, Axios and the Coinmarketca
 
 - Minification.
 
-- Preload styles/scripts to start loading them without blocking page rendering:
+- Preload styles/scripts to start loading them without blocking page rendering
 
 - Cache some resources for up to a year, after securing it with HTTPS and HTTP/2
 
